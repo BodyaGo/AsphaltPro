@@ -4,7 +4,7 @@ import { MongoClient, ObjectId } from 'mongodb'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
-const uri = "mongodb+srv://admin:admin@cluster0.9ellb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const uri = ""
 const client = new MongoClient(uri)
 
 // Простий логін для адміна (в реальному проекті використовуйте більш безпечну аутентифікацію)
