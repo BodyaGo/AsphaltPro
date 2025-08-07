@@ -542,7 +542,7 @@ export default function AsphaltCompanyWebsite() {
                     </td>
                     <td className="px-6 py-4 text-center text-gray-600">4-5 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">550,00</span>
+                      <span className="text-xl font-bold text-orange-600">650,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
@@ -551,7 +551,7 @@ export default function AsphaltCompanyWebsite() {
                     </td>
                     <td className="px-6 py-4 text-center text-gray-600">5-6 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">460,00</span>
+                      <span className="text-xl font-bold text-orange-600">560,00</span>
                     </td>
                   </tr>
 
@@ -565,28 +565,28 @@ export default function AsphaltCompanyWebsite() {
                     <td className="px-6 py-4 text-gray-900">Влаштування піщаної основи</td>
                     <td className="px-6 py-4 text-center text-gray-600">5-10 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">60,00</span>
+                      <span className="text-xl font-bold text-orange-600">80,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-900"></td>
                     <td className="px-6 py-4 text-center text-gray-600">15 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">80,00</span>
+                      <span className="text-xl font-bold text-orange-600">100,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-900">Влаштування щебеневої основи (фр. 20х40)</td>
                     <td className="px-6 py-4 text-center text-gray-600">12 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">130,00</span>
+                      <span className="text-xl font-bold text-orange-600">160,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-900"></td>
                     <td className="px-6 py-4 text-center text-gray-600">15 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">156,00</span>
+                      <span className="text-xl font-bold text-orange-600">170,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
@@ -595,7 +595,7 @@ export default function AsphaltCompanyWebsite() {
                     </td>
                     <td className="px-6 py-4 text-center text-gray-600">20 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">245,00</span>
+                      <span className="text-xl font-bold text-orange-600">265,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
@@ -604,28 +604,28 @@ export default function AsphaltCompanyWebsite() {
                     </td>
                     <td className="px-6 py-4 text-center text-gray-600">5-10 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">170,00</span>
+                      <span className="text-xl font-bold text-orange-600">190,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-900">Влаштування основи з асфальтної крихти</td>
                     <td className="px-6 py-4 text-center text-gray-600">5 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">100,00</span>
+                      <span className="text-xl font-bold text-orange-600">120,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-900"></td>
                     <td className="px-6 py-4 text-center text-gray-600">10 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">180,00</span>
+                      <span className="text-xl font-bold text-orange-600">200,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-900">Влаштування основи з відсіву</td>
                     <td className="px-6 py-4 text-center text-gray-600">5-10 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">80,00</span>
+                      <span className="text-xl font-bold text-orange-600">100,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
@@ -634,7 +634,7 @@ export default function AsphaltCompanyWebsite() {
                     </td>
                     <td className="px-6 py-4 text-center text-gray-600">5 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">175,00</span>
+                      <span className="text-xl font-bold text-orange-600">190,00</span>
                     </td>
                   </tr>
 
@@ -650,7 +650,7 @@ export default function AsphaltCompanyWebsite() {
                     </td>
                     <td className="px-6 py-4 text-center text-gray-600">до 10 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">35,00</span>
+                      <span className="text-xl font-bold text-orange-600">55,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
@@ -659,14 +659,14 @@ export default function AsphaltCompanyWebsite() {
                     </td>
                     <td className="px-6 py-4 text-center text-gray-600">до 20 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">110,00</span>
+                      <span className="text-xl font-bold text-orange-600">130,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-900"></td>
                     <td className="px-6 py-4 text-center text-gray-600">до 30 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">150,00</span>
+                      <span className="text-xl font-bold text-orange-600">170,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
@@ -675,7 +675,7 @@ export default function AsphaltCompanyWebsite() {
                     </td>
                     <td className="px-6 py-4 text-center text-gray-600">5 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">80,00</span>
+                      <span className="text-xl font-bold text-orange-600">100,00</span>
                     </td>
                   </tr>
 
@@ -691,7 +691,7 @@ export default function AsphaltCompanyWebsite() {
                     </td>
                     <td className="px-6 py-4 text-center text-gray-600">асф. до 5 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">620,00</span>
+                      <span className="text-xl font-bold text-orange-600">680,00</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
@@ -700,7 +700,7 @@ export default function AsphaltCompanyWebsite() {
                     </td>
                     <td className="px-6 py-4 text-center text-gray-600">асф. до 5 см</td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-xl font-bold text-orange-600">550,00</span>
+                      <span className="text-xl font-bold text-orange-600">600,00</span>
                     </td>
                   </tr>
                 </tbody>
