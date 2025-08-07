@@ -2,8 +2,8 @@
 
 import { MongoClient } from 'mongodb'
 
-const uri = "mongodb+srv://admin:admin@cluster0.9ellb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-const client = new MongoClient(uri)
+const uri = process.env.MONGODB_URI || "mongodb+srv://admin:admin@cluster0.9ellb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const client = uri ? new MongoClient(uri) : null
 
 export async function submitContactForm(formData: FormData) {
   try {
@@ -29,6 +29,15 @@ export async function submitContactForm(formData: FormData) {
       return {
         success: false,
         message: 'Будь ласка, введіть коректну електронну адресу'
+      }
+    }
+
+    if (!client) {
+      // Return success for demo purposes when database is not configured
+      return {
+        success: true,
+        message: 'Дякуємо за звернення! Ми зв\'яжемося з вами найближчим часом. (Demo mode - no database)',
+        id: 'demo-' + Date.now()
       }
     }
 
@@ -71,7 +80,9 @@ export async function submitContactForm(formData: FormData) {
     }
   } finally {
     try {
-      await client.close()
+      if (client) {
+        await client.close()
+      }
     } catch (closeError) {
       console.error('Error closing MongoDB connection:', closeError)
     }

@@ -4,8 +4,8 @@ import { MongoClient, ObjectId } from 'mongodb'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
-const uri = ""
-const client = new MongoClient(uri)
+const uri = process.env.MONGODB_URI || ""
+const client = uri ? new MongoClient(uri) : null
 
 // Простий логін для адміна (в реальному проекті використовуйте більш безпечну аутентифікацію)
 export async function adminLogin(formData: FormData) {
@@ -65,6 +65,28 @@ export async function getSubmissions(page = 1, limit = 10, status = 'all', searc
     const isAuthenticated = await checkAdminAuth()
     if (!isAuthenticated) {
       redirect('/admin/login')
+    }
+
+    if (!client) {
+      // Return mock data for demo purposes when database is not configured
+      return {
+        success: true,
+        data: {
+          submissions: [],
+          pagination: {
+            current: 1,
+            total: 1,
+            hasNext: false,
+            hasPrev: false
+          },
+          stats: {
+            total: 0,
+            new: 0,
+            contacted: 0,
+            completed: 0
+          }
+        }
+      }
     }
 
     await client.connect()
@@ -128,7 +150,7 @@ export async function getSubmissions(page = 1, limit = 10, status = 'all', searc
     }
   } finally {
     try {
-      await client.close()
+      await client?.close()
     } catch (closeError) {
       console.error('Error closing MongoDB connection:', closeError)
     }
@@ -141,6 +163,13 @@ export async function updateSubmissionStatus(id: string, status: string) {
     const isAuthenticated = await checkAdminAuth()
     if (!isAuthenticated) {
       return { success: false, message: 'Не авторизовано' }
+    }
+
+    if (!client) {
+      return {
+        success: false,
+        message: 'Database connection not configured'
+      }
     }
 
     await client.connect()
@@ -176,7 +205,7 @@ export async function updateSubmissionStatus(id: string, status: string) {
     }
   } finally {
     try {
-      await client.close()
+      await client?.close()
     } catch (closeError) {
       console.error('Error closing MongoDB connection:', closeError)
     }
@@ -189,6 +218,13 @@ export async function deleteSubmission(id: string) {
     const isAuthenticated = await checkAdminAuth()
     if (!isAuthenticated) {
       return { success: false, message: 'Не авторизовано' }
+    }
+
+    if (!client) {
+      return {
+        success: false,
+        message: 'Database connection not configured'
+      }
     }
 
     await client.connect()
@@ -216,7 +252,7 @@ export async function deleteSubmission(id: string) {
     }
   } finally {
     try {
-      await client.close()
+      await client?.close()
     } catch (closeError) {
       console.error('Error closing MongoDB connection:', closeError)
     }
