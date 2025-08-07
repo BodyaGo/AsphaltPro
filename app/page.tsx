@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, MapPin, Clock, Shield, Truck, Award, CheckCircle, Star, Menu, Leaf, DollarSign, Timer } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import ContactForm from "@/components/contact-form"
 
 export default function AsphaltCompanyWebsite() {
   return (
@@ -756,7 +757,7 @@ export default function AsphaltCompanyWebsite() {
       <section id="contact" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-orange-100 text-orange-800 mb-4">Зв'яжіться з нами</Badge>
+            <Badge className="bg-orange-100 text-orange-800 mb-4">Зв’яжіться з нами</Badge>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Готові розпочати свій проєкт?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Отримайте безкоштовний кошторис сьогодні або поспілкуйтесь з нашими експертами з асфальту щодо ваших
@@ -773,9 +774,7 @@ export default function AsphaltCompanyWebsite() {
                   <Phone className="h-6 w-6 text-orange-600 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Телефон</h4>
-                    <p className="text-gray-600">050 47 000 44</p>
-                    <p className="text-gray-600">093 47 000 44</p>
-                    <p className="text-gray-600">096 788 88 93</p>
+                    <p className="text-gray-600">(555) 123-ROAD</p>
                     <p className="text-sm text-gray-500">Цілодобове аварійне обслуговування</p>
                   </div>
                 </div>
@@ -804,7 +803,52 @@ export default function AsphaltCompanyWebsite() {
               </div>
             </div>
 
-            <ContactForm />
+            <Card className="p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Запросити кошторис</h3>
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Ім’я</label>
+                    <Input placeholder="Іван" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Прізвище</label>
+                    <Input placeholder="Іваненко" />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Електронна пошта</label>
+                  <Input type="email" placeholder="ivan@example.com" />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Телефон</label>
+                  <Input type="tel" placeholder="(555) 123-4567" />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Тип проєкту</label>
+                  <select className="w-full p-3 border border-gray-300 rounded-md">
+                    <option>Виберіть тип проєкту</option>
+                    <option>Приватна доріжка</option>
+                    <option>Комерційна парковка</option>
+                    <option>Будівництво дороги</option>
+                    <option>Ремонт та обслуговування</option>
+                    <option>Інше</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Деталі проєкту</label>
+                  <Textarea placeholder="Розкажіть про свій проєкт: розміри, терміни, особливі вимоги..." rows={4} />
+                </div>
+
+                <Button className="w-full bg-orange-600 hover:bg-orange-700 text-lg py-3">
+                  Отримати безкоштовний кошторис
+                </Button>
+              </form>
+            </Card>
           </div>
         </div>
       </section>
@@ -881,7 +925,7 @@ export default function AsphaltCompanyWebsite() {
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white">
-                    Кар'єра
+                    Кар’єра
                   </Link>
                 </li>
                 <li>
@@ -895,10 +939,13 @@ export default function AsphaltCompanyWebsite() {
             <div>
               <h4 className="font-semibold mb-4">Контакти</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>050 47 000 44</li>
-                <li>093 47 000 44</li>
-                <li>096 788 88 93</li>
+                <li>(555) 123-ROAD</li>
                 <li>info@asphaltpro.com</li>
+                <li>
+                  1234 Industrial Blvd
+                  <br />
+                  Metro City, ST 12345
+                </li>
               </ul>
             </div>
           </div>
